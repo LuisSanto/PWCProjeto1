@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cantinho dos pulguentos</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <div class="bg-amarelo">
+            <nav class="navbar">
+                <form class="container-fluid justify-content-start">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" alt="Bootstrap" width="100" height="90">
+                    </a>
+                  <a href="loja.html" class="btn bg-castanho me-2" type="button">Loja</a>
+                  <a href="adocao.html"class="btn bg-castanho me-2" type="button">Adotar</a>
+                  <a href="animais.html" class="btn bg-castanho me-2" type="button">Animais para adoção</a>
+                  <a href="favoritos.html" class="btn bg-castanho me-2" type="button">Favoritos</a>
+                </form>
+              </nav>
+        </div> 
+
+        
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-md-6 p-4">
+                        <p class="mb-1">Nome:</p>
+                        <input class="col-12 mb-3" type="text" name="Nome" >
+
+                        <p class="mb-1">Telefone:</p>
+                        <input class="col-12 mb-3" type="tel" name="phone" >
+                        
+                        <p class="mb-1">E-mail:</p>
+                        <input class="col-12 mb-3" type="email" name="email" >
+                        
+                        <p class="mb-1">Idade:</p>
+                        <input class="col-12 mb-3" type="number" name="age" >
+                        
+                        <p class="mb-1">Morada:</p>
+                        <textarea class="col-12 mb-3" class="form-control" id="address" name="address" ></textarea>
+                        
+                        <p class="mb-1">Cidade:</p>
+                        <input class="col-12 mb-3" type="text" name="Cidade" >
+
+                        <p class="mb-1">Profissão:</p>
+                        <input class="col-12 mb-3" type="text" name="profissao " >
+
+                        <p class="mb-1">Se gostaria de adoptar um animal específico, indique por favor o nome do animal.</p>
+                        <input class="col-12 mb-3" type="text" name="NomeAnimal" >
+                        <div>
+                            <p class="mb-1">Caso não procure adoptar um animal específico, indique se tem preferência pelo sexo do animal. </p>
+                            <input type="radio" name="GeneroAnimal" id="other">
+                            <label for="animaMacho">Mascolino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="GeneroAnimal" id="other">
+                            <label for="animalFemia">Femenino</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="GeneroAnimal" id="other">
+                            <label for="animalIndeferente">Indiferente</label>
+                        </div>
+                        
+                        <label class="mb-3">
+                            <p class="mb-1">Qual o objetivo da adopção? </p>
+                            <div>
+                                <input type="checkbox" name="objetivoAdocao" value="CompanhiaAnimal"> Companhia para outro animal
+                            </div>
+                            <div>
+                            <input type="checkbox" name="objetivoAdocao" value="CompanhiaPessoal"> Companhia
+                            </div>
+                            <div>
+                            <input type="checkbox" name="objetivoAdocao" value="Criacao"> Criação
+                            </div>
+                        </label>
+
+                        <div>
+                            <p class="mb-1">Tipo de habitação</p>
+                            <input type="radio" name="habitacao" id="other">
+                            <label for="apartamento">Apartamento</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="habitacao" id="other">
+                            <label for="moradia">Casa com quintal/acesso ao exterior</label>
+                        </div>
+
+                        <label class="mb-3">
+                            <p class="mb-1">Se tem jardim, este está completamente vedado?</p>
+                            <div>
+                                <input type="checkbox" name="vedado" value="Sim"> Sim
+                            </div>
+                            <div>
+                            <input type="checkbox" name="vedado" value="Nao"> Não
+                            </div>
+                        </label>
+                        
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">A habitação é</p>
+                            <div>
+                                <input type="checkbox" name="propriadadeHabitacional" value="propria"> Própria
+                            </div>
+                            <div>
+                            <input type="checkbox" name="propriadadeHabitacional" value="Arrendada"> Arrendada
+                            </div>
+                        </label>
+                        </div>
+                        
+                        <p class="mb-1">Quantos adultos vivem na casa?</p>
+                        <input class="col-12 mb-3" type="number" name="adultosCasa" >
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Vivem crianças na casa?</p>
+                            <div>
+                                <input type="checkbox" name="cirancasCasa" value="zero"> Não existem crianças
+                            </div>
+                            <div>
+                            <input type="checkbox" name="cirancasCasa" value="menos5"> < 5 anos 
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cirancasCasa" value="menos5"> 5 a 10 anos
+                            </div>
+                            <div>
+                                    <input type="checkbox" name="cirancasCasa" value="menos5"> >10 anos 
+                            </div>
+                        </label>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">A casa é visitada frequentemente por crianças? </p>
+                            <div>
+                                <input type="radio" name="frequenciaCrianca" value="sim"> Sim
+                            </div>
+                            <div>
+                            <input type="radio" name="frequenciaCrianca" value="nao"> Não
+                            </div>
+                        </label>
+                        </div>
+
+                        <p class="mb-1">Quantas horas por dia, em média, passará o animal, sozinho em casa?</p>
+                        <input class="col-12 mb-3" type="number" name="animalSozinhoCasa" >
+
+                        <p class="mb-1">Tem outros animais em casa e/ou a seu cargo? Se sim, especifique por favor o tipo e a idade.</p>
+                        <input class="col-12 mb-3" type="number" name="animaisExistentes" >
+
+                        <p class="mt-3">Que tipo de personalidade espera encontrar no animal? Preencha por favor as próximas questões:</p>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Goste de crianças:</p>
+                            <div>
+                                <input type="checkbox" name="gostaCrianca" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="gostaCrianca" value="2"> Importante 
+                            </div>
+                            <div>
+                                <input type="checkbox" name="gostaCrianca" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Sociável com outros animais:</p>
+                            <div>
+                                <input type="checkbox" name="sociavelAnimais" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="sociavelAnimais" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="sociavelAnimais" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Não se importe com estranhos:</p>
+                            <div>
+                                <input type="checkbox" name="ignoraEstranhos" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="ignoraEstranhos" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="ignoraEstranhos" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Esteja esterilizado/castrado:</p>
+                            <div>
+                                <input type="checkbox" name="castrado" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="castrado" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="castrado" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Goste de ser pegado ao colo:</p>
+                            <div>
+                                <input type="checkbox" name="gostaColo" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="gostaColo" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="gostaColo" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Que seja calmo:</p>
+                            <div>
+                                <input type="checkbox" name="calmo" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="calmo" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="calmo" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Que se comporte bem quando fica sozinho: </p>
+                            <div>
+                                <input type="checkbox" name="comportadoSozinho" value="3"> Muito importante
+                            </div>
+                            <div>
+                            <input type="checkbox" name="comportadoSozinho" value="2"> Importante
+                            </div>
+                            <div>
+                                <input type="checkbox" name="comportadoSozinho" value="1"> Pouco importante
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Atividade do animal: </p>
+                            <div>
+                                <input type="checkbox" name="atiidadeAnimal" value="calmo"> Calmo
+                            </div>
+                            <div>
+                            <input type="checkbox" name="atiidadeAnimal" value="moderadoAtio"> Moderadamente activo
+                            </div>
+                            <div>
+                                <input type="checkbox" name="atiidadeAnimal" value="ativo"> Activo
+                            </div>
+                            <div>
+                            <input type="checkbox" name="atiidadeAnimal" value="indiferente"> Indiferente
+
+
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Seá o seu primeiro animal? </p>
+                            <div>
+                                <input type="radio" name="primeiroAnimal" value="sim"> Sim
+                            </div>
+                            <div>
+                            <input type="radio" name="primeiroAnimal" value="nao"> Não
+                            </div>
+                        </label>
+                        </div>
+
+                        <p class="mb-1">Se não, conte-nos a sua experiência por favor.:</p>
+                        <input class="col-12 mb-3" type="text" name="experiencia" >
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Na sua ausência (férias p.ex.) como pretende deixar o animal?  </p>
+                            <div>
+                                <input type="checkbox" name="ausencia" value="amigosFamiliares"> Ficará aos cuidados de um familiar/conhecido;
+                            </div>
+                            <div>
+                            <input type="checkbox" name="ausencia" value="hotelAnimal"> Ficará em hotel;
+                            </div>
+                            <div>
+                                <input type="checkbox" name="ausencia" value="vaiFerias"> Irá comigo de férias.
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">O animal ficará preso em alguma situação?  </p>
+                            <div>
+                                <input type="radio" name="animalPreso" value="sim"> Sim
+                            </div>
+                            <div>
+                            <input type="radio" name="animalPreso" value="nao"> Não
+                            </div>
+                        </label>
+                        </div>
+
+                        <p class="mb-1">Tem algum veterinário preferido? Se sim, deixe o seu nome e contacto.</p>
+                        <input class="col-12 mb-3" type="text" name="veterinario " >
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">No caso de acidente, irá recorrer a um veterinário? </p>
+                            <div>
+                                <input type="radio" name="assidenteVeterinario" value="sim"> Sim
+                            </div>
+                            <div>
+                            <input type="radio" name="assidenteVeterinario" value="nao"> Não
+                            </div>
+                        </label>
+                        </div>
+
+                        
+                        <p class="mb-1">Se a conta for elevada, o que fará?</p>
+                        <input class="col-12 mb-3" type="text" name="contaElevada " >
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Que tipo de alimentação pretende dar ao animal?</p>
+                            <div>
+                                <input type="checkbox" name="tipoAlimentacao" value="racaoSeca"> Ração Seca
+                            </div>
+                            <div>
+                            <input type="checkbox" name="tipoAlimentacao" value="racaoHumida"> Ração húmida
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tipoAlimentacao" value="comidaCaseira"> Comida Caseira
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tipoAlimentacao" value="restos"> Restos de Refeições
+                            </div>
+                        </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">O que está nos seus planos para os próximos 10/15 anos? </p>
+                            <div>
+                                <input type="checkbox" name="plano15anos" value="filhos"> Ter filhos
+                            </div>
+                            <div>
+                            <input type="checkbox" name="plano15anos" value="viajar"> Viajar
+                            </div>
+                            <div>
+                                <input type="checkbox" name="plano15anos" value="casar"> Casar
+                            </div>
+                            <div>
+                                <input type="checkbox" name="plano15anos" value="MudarPais"> Mudar de país/cidade/etc
+                            </div>
+                            <div>
+                                <input type="checkbox" name="plano15anos" value="mudarCasa"> Mudar de casa
+                            </div>
+                        </label>
+                        </div>
+
+                        <p class="mb-1">Algum dos elementos do seu agregado familiar, ou amigos/parentes próximos, tem alergia a cães ou gatos?</p>
+                        <input class="col-12 mb-3" type="text" name="alergias" >
+
+                        <p class="mb-1">Em caso de gravidez, fará o teste da toxoplasmose?</p>
+                        <input class="col-12 mb-3" type="text" name="toxoplasmose " >
+
+                        <p class="mb-1">Se for positivo, o que fará?</p>
+                        <input class="col-12 mb-3" type="text" name="toxoplasmosePositivo " >
+
+                        <div class="mb-3">
+                            <label>
+                            <p class="mb-1">Gostaria de continuar a ter o nosso apoio/conselhos, depois de adoptar o animal? </p>
+                            <div>
+                                <input type="radio" name="apoioPosAdocao" value="sim"> Sim
+                            </div>
+                            <div>
+                                <input type="radio" name="apoioPosAdocao" value="nao"> Não
+                            </div>
+                            </label>
+                        </div>
+
+                        <p class="mb-1">Outra informação que queira partilhar connosco:</p>
+                        <input class="col-12 mb-3" type="text" name="questao" >
+
+                        <label class="form-label" for="customFile">Enaxar ficheiro:</label>
+                            <input type="file" class="form-control mb-4 col-12" id="customFile" />
+                        
+                        <input class="col-12 btn btn-primary bg-black" type="submit" value="Enviar">
+                    </form> 
+                </div>
+                <div class="col-md-6 p-3">
+                    <img src="assets/img/cao.png" alt="cao fofo">
+                </div>
+            </div>
+                
+        </div>
+        <footer class="footer mt-auto py-3 bg-castanho">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6 text-md-right ">
+                    <a href="sobreNos.html" class="btn bg-amarelo me-2" type="button">Sobre Nós</a>
+                    <a href="contatos.html" class="btn bg-amarelo me-2" type="button">Contactos</a>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+    
+</html>
