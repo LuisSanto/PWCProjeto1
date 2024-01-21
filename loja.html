@@ -30,9 +30,9 @@
                             <h5 class="card-title">Ração universal</h5>
                             <p class="card-text">Ração nutritiva para todos os animais</p>
                             <div class="form-outline">
-                                <input type="number" id="typeNumber" class="form-control"> 15,99€/kg
+                                <input min="0" type="number" id="produto1" class="form-control"> 15,99€/kg
                             </div>
-                            <a href="#" class="btn bg-castanho col-12 mt-2">Comprar</a>
+                            <a onclick="Comprar(`Ração universal`,`15.99`,`produto1`)" class="btn bg-castanho col-12 mt-2">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -45,9 +45,9 @@
                             <h5 class="card-title">Cama animal</h5>
                             <p class="card-text">Cama para animais medio porte poderem descansar confortavelmente</p>
                             <div class="form-outline">
-                                <input type="number" id="typeNumber" class="form-control"> 25€ unidade
+                                <input min="0" type="number" id="produto2" class="form-control"> 25€ unidade
                             </div>
-                            <a href="#" class="btn bg-castanho col-12 mt-2">Comprar</a>
+                            <a onclick="Comprar(`Cama animal`,`25`,`produto2`)" class="btn bg-castanho col-12 mt-2">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -58,9 +58,9 @@
                             <h5 class="card-title">Brinquedo para cão</h5>
                             <p class="card-text">Otimo brinquedo para o seu cão despersar energias</p>
                             <div class="form-outline">
-                                <input type="number" id="typeNumber" class="form-control"> 7,99€ unidade
+                                <input min="0" type="number" id="produto3" class="form-control"> 7,99€ unidade
                             </div>
-                            <a href="#" class="btn bg-castanho col-12 mt-2">Comprar</a>
+                            <a onclick="Comprar(`Brinquedo para cão`,`7.99`,`produto3`)" class="btn bg-castanho col-12 mt-2">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -87,5 +87,13 @@
           </section>
       <script src="assets/js/bootstrap.min.js"></script>
     </body>
-    
+    <script>
+        function Comprar(produto, preco, inputId){ //nao consegue passar os valores 
+            let unidade = document.getElementById(inputId).value; //ir buscar o que esta na input box de quantidade
+            if(unidade==0){
+                return
+            }
+            alert(`Comprou ${unidade}x ${produto} por  ${preco*unidade}`)
+        }
+    </script>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cantinho dos pulguentos</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="bg-amarelo">
+      <nav class="navbar ">
+          <form class="container-fluid justify-content-start">
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/logo.png" alt="Bootstrap" width="100" height="90">
+              </a>
+            <a href="loja.html" class="btn bg-castanho me-2 text-white" type="button">Loja</a>
+            <a href="adocao.html"class="btn bg-castanho me-2 text-white" type="button">Adotar</a>
+            <a href="animais.html" class="btn bg-castanho me-2 text-white" type="button">Animais para adoção</a>
+            <a href="favoritos.html" class="btn bg-castanho me-2 text-white" type="button">Favoritos</a>
+          </form>
+        </nav>
+    </div>    
+        
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4 p-4">
+                <img  class="img-fluid imagemAnimal" alt="">
+            </div>
+            <div class="col-md-8 p-4">
+                <h1 class="nome_animal"></h1>
+                <table class="table">
+                  <tr>
+                    <th>Idade</th>
+                    <th class="idade_animal"></th>
+                  </tr>
+                  <tr>
+                    <th>Genero</th>
+                    <th class="sexo_animal"></th>
+                  </tr>
+                  <tr>
+                    <th>Porte</th>
+                    <th class="tamanho_aninal"></th>
+                  </tr>
+                  <tr>
+                    <th>Tipo de animal</th>
+                    <th class="raca_animal"></th>
+                  </tr>
+                  <tr>
+                    <th>Especie de animal</th>
+                    <th class="especie_animal"></th>
+                  </tr>
+                </table>
+                <button type="button" class="btn btn-primary adicionar_favoritos m-2">Adicionar aos favoritos</button>
+                <a href="adocao.html" class="btn btn-primary adicionar_favoritos m-2">Adotar</a>
+            </div>
+            
+        </div>
+      </div>
+
+      <section>
+        <footer class="text-center text-white bg-castanho">
+          <div class="container p-4 pb-0">
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Pode sempre entrar em contacto:</span>
+                <a href="contatos.html">
+                  <button type="button" class="btn btn-outline-light btn-rounded">Contactos</button>
+                </a>
+                </button>
+              </p>
+            </section>
+          </div>
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="sobreNos.html">Cantinho dos Pulguentos</a>
+          </div>
+        </footer>
+      </section>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="scripDetalhes.js"></script>
+</body>
+    
+</html>
